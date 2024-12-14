@@ -1,0 +1,105 @@
+/* Overall container for the Offers section */
+.offers {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 500px;
+    width: 100%;
+    padding: 0px 360px;
+    background: linear-gradient(to right, #00c3ff, #00ffcc); /* Light gradient background */
+    overflow: hidden;
+  }
+  
+  /* Left side of the Offers section (40% width) */
+  .offers-left {
+    flex: 0 0 40%; /* 40% width */
+    padding: 30px;
+  }
+  
+  /* Title styling */
+  .offers-left h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+    line-height: 1.2;
+  }
+  
+  /* Subtitle styling */
+  .offers-left p {
+    font-size: 18px;
+    color: #555;
+    margin-top: 10px;
+    font-weight: 300;
+  }
+  
+  /* Button styling */
+  .offers-left button {
+    background-color: #000000; /* Blue background */
+    color: #fff;
+    font-size: 18px;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .offers-left button:hover {
+    background-color: #ffffff; /* Darker blue on hover */
+    color: black;
+  }
+  
+  /* Right side (image) of the Offers section (40% width) */
+  .offers_right {
+    flex: 0 0 40%; /* 40% width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+  }
+  
+  .offers_right img {
+    width: 100%;
+    max-width: 100%; /* Ensure the image fits within its container */
+    height: auto;
+    object-fit: contain;
+    /* Removed hover effect */
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .offers {
+      flex-direction: column;
+      padding: 30px 15px;
+    }
+  
+    .offers-left {
+      max-width: 100%;
+      padding: 20px;
+    }
+  
+    .offers_right {
+      max-width: 100%;
+      padding: 20px;
+    }
+  
+    .offers-left h1 {
+      font-size: 32px; /* Slightly smaller text for smaller screens */
+    }
+  
+    .offers-left p {
+      font-size: 16px;
+    }
+  
+    .offers-left button {
+      font-size: 16px;
+      padding: 12px 20px;
+    }
+  
+    .offers_right img {
+      max-width: 100%;
+    }
+  }
+  

@@ -1,0 +1,54 @@
+/* Center the entire container */
+.brands-container {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  /* Style for the heading */
+  .brands-heading {
+    margin-top: 40px;
+    padding-top: 30px;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+  
+  /* Slider container styling */
+  .slider {
+    height: 200px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 100%; /* Make sure the slider takes full width of the container */
+  }
+  
+  /* Animation and layout of the slide track */
+  .slide-track {
+    animation: scroll 30s linear infinite;
+    display: flex;
+    width: calc(250px * 14);
+  }
+  
+  /* Styling for individual slides */
+  .slide {
+    height: 100px;
+    width: 250px;
+  }
+  
+  /* Make images fill their container */
+  img {
+    padding-left: 70px;
+    height: 100px;
+  }
+  
+  /* Keyframes for scroll animation */
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-250px * 7));
+    }
+  }
+  

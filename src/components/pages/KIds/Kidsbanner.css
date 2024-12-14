@@ -1,0 +1,43 @@
+.kidbanner-container {
+    position: relative;
+    height: 800px;
+    background-image: url('./kids/banner.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .kidbanner-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    padding: 20px;
+  }
+  
+  .kidbanner-overlay h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .kidbanner-overlay p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .kidbanner-overlay button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .kidbanner-overlay button:hover {
+    background-color: #0056b3;
+  }
+  

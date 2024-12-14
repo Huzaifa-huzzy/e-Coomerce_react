@@ -1,0 +1,93 @@
+/* card.css */
+
+/* Main card container */
+.card-container {
+  width: 300px;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+  margin: 20px;
+}
+
+/* Hover effect on card */
+.card-container:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Card image container (full background image) */
+.card-image {
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  transition: opacity 0.3s ease;
+}
+
+/* Hover effect to show name */
+.card-container:hover .card-image .card-hover {
+  opacity: 1;
+}
+
+/* Hidden by default - Name visible only on hover */
+.card-hover {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Price container at the bottom of the card */
+.item-prices {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  background-color: #f8f8f8;
+  border-top: 1px solid #ddd;
+  font-size: 16px;
+}
+
+/* New price */
+.new-price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2ecc71;
+}
+
+/* Old price */
+.old-price {
+  font-size: 16px;
+  color: #888;
+  text-decoration: line-through;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 600px) {
+  .card-container {
+    width: 90%;
+    margin: 10px auto;
+  }
+  .card-hover p {
+    font-size: 16px;
+  }
+  .item-prices {
+    font-size: 14px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .new-price {
+    font-size: 16px;
+  }
+  .old-price {
+    font-size: 14px;
+  }
+}

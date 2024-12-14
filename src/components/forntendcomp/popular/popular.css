@@ -1,0 +1,55 @@
+/* Overall container for the Popular section */
+.popular {
+    padding: 30px 15px;
+    text-align: center;
+    background-color: #ffffff;
+    width: 80%; /* Limit the width to 80% of the parent container */
+    margin: 0 auto; /* Center the section horizontally */
+  }
+  
+  /* Heading style */
+  .popular h1 {
+    font-size: 36px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+  }
+  
+  /* Container for the product items (flex wrapping layout) */
+  .popular-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px; /* Optional: Adds space above the items */
+  }
+  
+  /* Each product card */
+  .popular-items > div {
+    flex: 1 1 250px; /* Allow the cards to grow and shrink with a base width of 250px */
+    max-width: 250px; /* Ensure the cards do not exceed 250px in width */
+  }
+  
+  /* Responsive design for the grid (adjusting the gap and card size) */
+  @media (max-width: 768px) {
+    .popular-items {
+      gap: 15px;
+    }
+  
+    .popular-items > div {
+      flex: 1 1 200px; /* Cards will have a minimum width of 200px */
+      max-width: 200px; /* Ensure the cards do not exceed 200px */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .popular-items {
+      gap: 10px;
+    }
+  
+    .popular-items > div {
+      flex: 1 1 150px; /* Cards will have a minimum width of 150px */
+      max-width: 150px; /* Ensure the cards do not exceed 150px */
+    }
+  }
+  

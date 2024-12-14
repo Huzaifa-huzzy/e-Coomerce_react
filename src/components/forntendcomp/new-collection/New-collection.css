@@ -1,0 +1,75 @@
+/* New-collection.css */
+
+/* Container for the New Collection Section */
+.new-collection {
+    width: 80%;
+    margin: 0 auto;
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  /* Heading for the New Collection */
+  .new-collection h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  
+  /* Collection Container */
+  .collection {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Grid with flexible columns */
+    gap: 30px;
+    padding: 0 10px;
+  }
+  
+  /* Style for the Card component */
+  .card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Hover effect for cards */
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Style for the image inside the card */
+  .card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Price section styling */
+  .card .price {
+    padding: 15px;
+  }
+  
+  .card .price .new-price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #e74c3c;
+    margin-right: 10px;
+  }
+  
+  .card .price .old-price {
+    font-size: 16px;
+    text-decoration: line-through;
+    color: #7f8c8d;
+  }
+  
+  .card .price .old-price:before {
+    content: "Was: ";
+  }
+  
+  .card .price .new-price:before {
+    content: "Now: ";
+  }
+  

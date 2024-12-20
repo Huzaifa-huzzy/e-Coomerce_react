@@ -1,4 +1,4 @@
-live preview: https://leafy-cuchufli-1ea91e.netlify.app
+live preview: https://youclothe.netlify.app
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
